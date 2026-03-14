@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Initiatives | Vexilla Foundations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0d0d0f; color: #cbd5e1; font-family: 'Inter', sans-serif; }
+        .grant-card { background: #16161a; border: 1px solid #262626; border-left: 4px solid #6366f1; transition: 0.3s; }
+        .grant-card:hover { border-color: #6366f1; background: #1c1c22; }
+        .initiative-badge { background: rgba(99, 102, 241, 0.1); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 border-b border-gray-800 bg-[#0d0d0f]/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold tracking-tighter uppercase text-white">Vexilla <span class="text-indigo-500">Foundations</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+                <a href="index.html" class="hover:text-indigo-400">Home</a>
+                <a href="#initiatives" class="hover:text-indigo-400">Initiatives</a>
+                <a href="#grants" class="hover:text-indigo-400">Grant Portal</a>
+                <a href="#nonprofit-login" class="text-indigo-400 underline">NPC Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 px-4 text-center bg-gradient-to-b from-indigo-950/20 to-transparent">
+        <div class="max-w-4xl mx-auto">
+            <span class="initiative-badge px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Funding the Future</span>
+            <h1 class="text-4xl md:text-6xl font-black text-white mt-6 mb-4">Grant Initiative <span class="text-indigo-500">&</span> Foundation Support</h1>
+            <p class="text-gray-400 text-lg">We depend on strategic grant partnerships to develop autonomous technology that safeguards human identity and the environment.</p>
+        </div>
+    </header>
+
+    <section class="py-12 max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center bg-zinc-900/50 p-8 rounded-2xl border border-zinc-800">
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-4 italic">"The Scientific Alignment of Cause & Code"</h2>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Our organization is uniquely positioned at the intersection of <strong>AI Governance (Vexilla AITS)</strong> and <strong>Social Advocacy (TBBLUSA)</strong>. We provide donors with a verifiable, autonomous dashboard to track how every dollar of grant money is deployed through our blockchain-verified record-keeping system.
+                </p>
+                <button class="bg-white text-black px-6 py-3 rounded font-bold uppercase text-sm hover:bg-indigo-500 hover:text-white transition">Download Impact Report (PDF)</button>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-4">
+                    <div class="text-indigo-500 mt-1"><i class="fa-solid fa-check-double"></i></div>
+                    <p class="text-sm"><strong>AEAH Safe-Space:</strong> Protecting communities from electronic harassment.</p>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-indigo-500 mt-1"><i class="fa-solid fa-check-double"></i></div>
+                    <p class="text-sm"><strong>Clean Blue Green:</strong> Industrial-scale environmental verification.</p>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-indigo-500 mt-1"><i class="fa-solid fa-check-double"></i></div>
+                    <p class="text-sm"><strong>TBBLUSA Identity:</strong> Cultural record-keeping and legal sovereignty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="initiatives" class="py-20 px-4 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-10 text-center">Active Target Grant Ecosystem (2026-2027)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-y-auto max-h-[800px] p-4 custom-scrollbar">
+                
+                <div class="grant-card p-6 rounded-lg">
+                    <h4 class="text-indigo-400 font-bold mb-2 uppercase text-xs tracking-tighter">Technology/Infrastructure</h4>
+                    <h3 class="text-white font-bold mb-2">The National Science Foundation (NSF)</h3>
+                    <p class="text-sm text-gray-500 mb-4 italic">Target: $500k - $1.2M</p>
+                    <p class="text-xs text-gray-400 leading-tight">Pitch: Funding the <strong>KinOS</strong> kernel as an open-source standard for secure community computing.</p>
+                </div>
+
+                <div class="grant-card p-6 rounded-lg border-l-green-500">
+                    <h4 class="text-green-500 font-bold mb-2 uppercase text-xs tracking-tighter">Environmental Protection</h4>
+                    <h3 class="text-white font-bold mb-2">Bloomberg Philanthropies</h3>
+                    <p class="text-sm text-gray-500 mb-4 italic">Target: $250k - $750k</p>
+                    <p class="text-xs text-gray-400 leading-tight">Pitch: Scaling the <strong>GCJ Windmill System</strong> for sustainable energy in urban hubs.</p>
+                </div>
+
+                <div class="grant-card p-6 rounded-lg border-l-pink-500">
+                    <h4 class="text-pink-500 font-bold mb-2 uppercase text-xs tracking-tighter">Human Rights & Law</h4>
+                    <h3 class="text-white font-bold mb-2">The Ford Foundation</h3>
+                    <p class="text-sm text-gray-500 mb-4 italic">Target: $100k - $500k</p>
+                    <p class="text-xs text-gray-400 leading-tight">Pitch: Supporting <strong>AEAH.org</strong> initiatives to legally define and combat electronic abuse.</p>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <section id="grants" class="py-20 px-4 bg-indigo-600 text-white">
+        <div class="max-w-3xl mx-auto bg-black/20 p-10 rounded-3xl backdrop-blur-lg border border-white/10">
+            <h2 class="text-3xl font-black mb-6 text-center">NPC Interest & Grant Award Form</h2>
+            <p class="text-center mb-10 text-indigo-100">Foundations and Government bodies: Use this form to express interest in awarding grants or partnering on Vexilla initiatives.</p>
+            
+            <form action="#" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Organization Name" class="bg-black/40 border border-indigo-400/30 p-4 rounded w-full focus:border-white outline-none">
+                    <input type="email" placeholder="Official Email Address" class="bg-black/40 border border-indigo-400/30 p-4 rounded w-full focus:border-white outline-none">
+                </div>
+                <select class="bg-black/40 border border-indigo-400/30 p-4 rounded w-full focus:border-white outline-none appearance-none">
+                    <option>Select Primary Initiative</option>
+                    <option>KinOS Autonomous Software</option>
+                    <option>AEAH Electronic Abuse Protection</option>
+                    <option>TBBLUSA Identity Sovereignty</option>
+                    <option>GCJ Environmental Verification</option>
+                </select>
+                <textarea rows="4" placeholder="Briefly describe the Grant scope or award details..." class="bg-black/40 border border-indigo-400/30 p-4 rounded w-full focus:border-white outline-none"></textarea>
+                <button class="w-full bg-white text-indigo-600 py-4 rounded font-black text-lg hover:bg-gray-200 transition">SUBMIT OFFICIAL EXPRESSION OF INTEREST</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-xs text-gray-700">
+        &copy; 2026 VEXILLA ENTERPRISE FOUNDATIONS. NPC REGISTERED PORTAL.
+    </footer>
+
+</body>
+</html>
