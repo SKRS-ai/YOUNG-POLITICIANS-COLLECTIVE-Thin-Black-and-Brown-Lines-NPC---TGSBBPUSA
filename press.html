@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press & Media | Vexilla Newsroom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #040405; color: #9ca3af; font-family: 'Inter', sans-serif; }
+        .press-header { background: linear-gradient(to bottom, #1e1b4b 0%, #040405 100%); }
+        .news-card { background: #0d0d0f; border-left: 2px solid #4f46e5; transition: 0.3s; }
+        .news-card:hover { background: #16161a; border-left-width: 8px; }
+        .download-btn { border: 1px solid #374151; color: #f3f4f6; transition: 0.2s; }
+        .download-btn:hover { background: #ffffff; color: #000000; }
+    </style>
+</head>
+<body>
+
+    <nav class="p-6 flex justify-between items-center border-b border-white/5">
+        <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-bullhorn text-indigo-500"></i>
+            <span class="text-white font-black tracking-tighter uppercase">Vexilla <span class="text-indigo-400">Press</span></span>
+        </div>
+        <a href="index.html" class="text-[10px] font-bold text-gray-500 hover:text-white uppercase tracking-widest">Main Portal</a>
+    </nav>
+
+    <header class="press-header pt-20 pb-16 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-4 uppercase italic tracking-tighter">Media & Communications</h1>
+            <p class="text-gray-400">Official resources, narrative assets, and corporate milestones for the Vexilla Enterprise Network.</p>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-3 gap-12">
+        
+        <div class="lg:col-span-2 space-y-8">
+            <h2 class="text-xs font-black text-indigo-400 uppercase tracking-[0.3em] mb-6">Recent Announcements</h2>
+            
+            <div class="news-card p-8 rounded-r-xl">
+                <span class="text-[10px] font-mono text-indigo-500">MARCH 14, 2026</span>
+                <h3 class="text-xl font-bold text-white mt-2 mb-3">Vexilla AITS Announces "KinOS" Open-Source Foundation Integration</h3>
+                <p class="text-sm leading-relaxed mb-4">A strategic move to align our autonomous software kernel with global community computing standards, facilitating secure identity for the TBBLUSA network.</p>
+                <a href="#" class="text-xs font-bold text-indigo-400 hover:underline">Read Full Release &rarr;</a>
+            </div>
+
+            <div class="news-card p-8 rounded-r-xl">
+                <span class="text-[10px] font-mono text-indigo-500">FEBRUARY 28, 2026</span>
+                <h3 class="text-xl font-bold text-white mt-2 mb-3">IBINGOD Trade Expands Industrial Verification for Clean Blue Green Corp</h3>
+                <p class="text-sm leading-relaxed mb-4">New environmental auditing protocols launched to support sustainable trade routes across Global Citizen Joe logistics hubs.</p>
+                <a href="#" class="text-xs font-bold text-indigo-400 hover:underline">Read Full Release &rarr;</a>
+            </div>
+
+            <div class="news-card p-8 rounded-r-xl">
+                <span class="text-[10px] font-mono text-indigo-500">JANUARY 15, 2026</span>
+                <h3 class="text-xl font-bold text-white mt-2 mb-3">The "Great Seal" Identity Milestone</h3>
+                <p class="text-sm leading-relaxed mb-4">Vexilla Foundations reports 10,000+ digital identity assets issued through the autonomous repository since the 2026 cycle began.</p>
+                <a href="#" class="text-xs font-bold text-indigo-400 hover:underline">Read Full Release &rarr;</a>
+            </div>
+        </div>
+
+        <div class="space-y-12">
+            
+            <section>
+                <h2 class="text-xs font-black text-indigo-400 uppercase tracking-[0.3em] mb-6">Downloadable Assets</h2>
+                <div class="space-y-3">
+                    <button class="download-btn w-full p-4 rounded text-xs font-bold flex justify-between items-center">
+                        <span>Brand Identity Guide (PDF)</span>
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                    <button class="download-btn w-full p-4 rounded text-xs font-bold flex justify-between items-center">
+                        <span>High-Res Logo Pack (ZIP)</span>
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                    <button class="download-btn w-full p-4 rounded text-xs font-bold flex justify-between items-center">
+                        <span>The Great Seal Assets (PNG)</span>
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                    <button class="download-btn w-full p-4 rounded text-xs font-bold flex justify-between items-center">
+                        <span>Executive Headshots</span>
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </div>
+            </section>
+
+            <section class="bg-indigo-950/20 p-8 rounded-2xl border border-indigo-500/20">
+                <h2 class="text-white font-bold mb-4 uppercase text-sm tracking-tighter">Media Inquiries</h2>
+                <p class="text-xs leading-relaxed mb-6 italic">For interview requests or high-fidelity technical data regarding the Vexilla Hierarchy:</p>
+                <div class="space-y-2">
+                    <p class="text-[10px] font-bold text-indigo-400 uppercase">Primary Contact:</p>
+                    <p class="text-sm text-white">press@vexillaenterprise.com</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <section class="bg-zinc-900/50 py-20 px-6 border-y border-white/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-black text-white mb-6 italic">"The c1999 Legacy Meets 2026 Tech"</h2>
+            <p class="text-sm leading-relaxed text-gray-400 italic">
+                Vexilla Enterprise isn't just a startup; it is the culmination of nearly three decades of cultural record-keeping and industrial logistics. From our origins in 1999 to our current autonomous state, the mission remains: to build the software and legal infrastructure for the next generation of global citizens.
+            </p>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-[10px] font-bold uppercase text-zinc-600 tracking-widest">
+        &copy; 2026 VEXILLA ENTERPRISE COMMUNICATIONS UNIT
+    </footer>
+
+</body>
+</html>
