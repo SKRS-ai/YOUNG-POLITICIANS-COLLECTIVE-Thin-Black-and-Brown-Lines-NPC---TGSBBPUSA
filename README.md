@@ -1,0 +1,2 @@
+# YOUNG-POLITICIANS-COLLECTIVE-Thin-Black-and-Brown-Lines-NPC---TGSBBPUSA
+The official digital infrastructure for the Young Politicians Collective (YPC), a division of Thin Black and Brown Lines, NPC and The Great Seal of the Black and Brown People of the USA Foundation. This repository hosts the civic-tech framework for youth political leadership, ancestral guardianship, and developmental verification systems.
