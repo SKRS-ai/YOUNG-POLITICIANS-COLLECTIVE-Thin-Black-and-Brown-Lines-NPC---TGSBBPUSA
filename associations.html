@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Hierarchy | Vexilla Command Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #050507; color: #94a3b8; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .nexus-line { background: linear-gradient(180deg, #6366f1 0%, transparent 100%); width: 2px; height: 50px; margin: 0 auto; }
+        .node { background: #111114; border: 1px solid #1f1f23; transition: 0.4s; cursor: pointer; }
+        .node:hover { border-color: #818cf8; transform: scale(1.02); box-shadow: 0 0 20px rgba(99, 102, 241, 0.2); }
+        .foundation-tag { font-size: 0.6rem; background: #312e81; color: #c7d2fe; padding: 2px 6px; border-radius: 9999px; }
+        .connection-grid { background-image: radial-gradient(#1f1f23 1px, transparent 1px); background-size: 30px 30px; }
+    </style>
+</head>
+<body class="connection-grid">
+
+    <nav class="border-b border-gray-800 bg-black/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <i class="fa-solid fa-network-wired text-indigo-500"></i>
+                <span class="text-white font-bold tracking-tighter uppercase">Vexilla <span class="text-indigo-400">Command</span></span>
+            </a>
+            <div class="space-x-6 text-xs font-bold uppercase tracking-widest">
+                <a href="store.html" class="hover:text-white">The Repository</a>
+                <a href="foundations.html" class="hover:text-white">Grants</a>
+                <span class="text-green-500 font-mono italic">DATA_SYNC: ACTIVE</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-16 px-4 text-center">
+        <h1 class="text-3xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter">Organizational Association Chart</h1>
+        <p class="max-w-2xl mx-auto text-sm text-gray-500">A high-fidelity mapping of corporate command, subsidiary operations, and foundation alliances. Click a node to view digital product affiliations.</p>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-4 pb-20">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="node p-8 rounded-3xl text-center">
+                <i class="fa-solid fa-crown text-3xl text-yellow-500 mb-4"></i>
+                <h2 class="text-white font-black text-xl mb-1 uppercase">Solomon Kin, LLC.</h2>
+                <p class="text-xs tracking-widest text-indigo-400 mb-4 font-bold uppercase underline">Media & Tech Parent</p>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="foundation-tag">Vexilla AITS</span>
+                    <span class="foundation-tag">SK Records</span>
+                    <span class="foundation-tag">Realm Studios</span>
+                </div>
+            </div>
+
+            <div class="node p-8 rounded-3xl text-center">
+                <i class="fa-solid fa-globe text-3xl text-blue-500 mb-4"></i>
+                <h2 class="text-white font-black text-xl mb-1 uppercase">Global Citizen Joe, LLC.</h2>
+                <p class="text-xs tracking-widest text-green-400 mb-4 font-bold uppercase underline">Consumer & Logistics Parent</p>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="foundation-tag">GCJ Beverage</span>
+                    <span class="foundation-tag">Everward Tours</span>
+                    <span class="foundation-tag">Artwall Holdings</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nexus-line"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 mt-8">
+            <div class="node p-6 rounded-2xl">
+                <h3 class="text-white font-bold mb-2 uppercase text-sm italic">Vexilla AITS, Inc.</h3>
+                <p class="text-[10px] text-gray-500 leading-relaxed mb-4">The core software engine. Powers KinOS, ScribeBoard, and all digital verification protocols.</p>
+                <div class="border-t border-gray-800 pt-3">
+                    <p class="text-[9px] uppercase font-bold text-indigo-500">Association:</p>
+                    <p class="text-[10px] text-gray-400 font-mono tracking-tighter">SOLOMON KIN <> TBBLUSA</p>
+                </div>
+            </div>
+
+            <div class="node p-6 rounded-2xl">
+                <h3 class="text-white font-bold mb-2 uppercase text-sm italic">IBINGOD Trade, Inc.</h3>
+                <p class="text-[10px] text-gray-500 leading-relaxed mb-4">International import/export and industrial verification portal (ibingodtrade.com).</p>
+                <div class="border-t border-gray-800 pt-3">
+                    <p class="text-[9px] uppercase font-bold text-green-500">Association:</p>
+                    <p class="text-[10px] text-gray-400 font-mono tracking-tighter">GCJ LLC <> CLEAN BLUE GREEN</p>
+                </div>
+            </div>
+
+            <div class="node p-6 rounded-2xl border-l-4 border-l-red-500">
+                <h3 class="text-white font-bold mb-2 uppercase text-sm italic">Non-Profit Command</h3>
+                <p class="text-[10px] text-gray-500 leading-relaxed mb-4">TBBLUSA.org and AEAH.org. The social and legal advocacy wing.</p>
+                <div class="border-t border-gray-800 pt-3">
+                    <p class="text-[9px] uppercase font-bold text-red-500">Association:</p>
+                    <p class="text-[10px] text-gray-400 font-mono tracking-tighter">FOUNDATIONS <> SOCIAL EQUITY</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-indigo-950/20 border border-indigo-500/20 p-10 rounded-[3rem] text-center">
+            <h3 class="text-indigo-400 font-black text-2xl mb-8 uppercase tracking-widest underline decoration-2 underline-offset-8 italic">The Foundation Nexus</h3>
+            
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 text-[10px] font-bold uppercase tracking-tight">
+                <div class="bg-black/40 p-3 rounded-lg border border-gray-800 hover:text-white transition">Christmas Tree Farm</div>
+                <div class="bg-black/40 p-3 rounded-lg border border-gray-800 hover:text-white transition">Koinonia Grace</div>
+                <div class="bg-black/40 p-3 rounded-lg border border-gray-800 hover:text-white transition">Vexilla Vanguard</div>
+                <div class="bg-black/40 p-3 rounded-lg border border-gray-800 hover:text-white transition">Sexy Heros</div>
+                <div class="bg-black/40 p-3 rounded-lg border border-gray-800 hover:text-white transition">Gods Law Matter</div>
+                <div class="bg-black/40 p-3 rounded-lg border border-gray-800 hover:text-white transition">Come To Christ</div>
+                <div class="bg-black/40 p-3 rounded-lg border border-gray-800 hover:text-white transition">Digital Doorway</div>
+                <div class="bg-black/40 p-3 rounded-lg border border-gray-800 hover:text-white transition">Logos Foundation</div>
+            </div>
+            
+            <p class="mt-8 text-xs italic text-gray-600">All foundations require 1:1 corporate sponsorship or community grant funding for deployment.</p>
+        </div>
+
+    </div>
+
+    <footer class="bg-black py-10 border-t border-gray-900 text-center">
+        <div class="mb-4">
+            <a href="store.html" class="bg-white text-black px-6 py-2 rounded-full font-black text-xs hover:bg-indigo-500 hover:text-white transition uppercase">Return to Repository</a>
+        </div>
+        <p class="text-[10px] text-gray-700 font-mono tracking-tighter italic">VEXILLA_ENTERPRISE_ASSOCIATION_GRAPH_VER_2.6</p>
+    </footer>
+
+</body>
+</html>
