@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Inventory | Vexilla Command Ledger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #020203; color: #a1a1aa; font-family: 'Inter', sans-serif; }
+        .ledger-row { border-bottom: 1px solid #18181b; transition: background 0.2s; }
+        .ledger-row:hover { background: #09090b; }
+        .sku-badge { font-family: 'JetBrains Mono', monospace; background: #1e1b4b; color: #818cf8; font-size: 0.65rem; padding: 2px 6px; border-radius: 4px; }
+        .cmd-label { font-size: 0.6rem; font-weight: 800; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <div class="max-w-7xl mx-auto">
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
+            <div>
+                <h1 class="text-3xl font-black text-white uppercase tracking-tighter italic">Command <span class="text-indigo-500">Inventory</span></h1>
+                <p class="text-xs text-zinc-500 mt-1 uppercase tracking-widest">100+ Digital Products // Autonomous Ledger</p>
+            </div>
+            <div class="flex space-x-3">
+                <button class="bg-indigo-600 text-white text-[10px] font-black px-6 py-2 rounded uppercase">Export CSV</button>
+                <a href="store.html" class="border border-zinc-800 text-[10px] font-black px-6 py-2 rounded uppercase text-zinc-400">View Public Store</a>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            <div class="bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
+                <p class="text-[10px] font-bold text-zinc-500 uppercase">Total SKUs</p>
+                <p class="text-xl font-black text-white italic">105</p>
+            </div>
+            <div class="bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
+                <p class="text-[10px] font-bold text-zinc-500 uppercase">Active Fulfillment</p>
+                <p class="text-xl font-black text-green-500 italic">AUTO</p>
+            </div>
+            <div class="bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
+                <p class="text-[10px] font-bold text-zinc-500 uppercase">Avg. Product Margin</p>
+                <p class="text-xl font-black text-white italic">98%</p>
+            </div>
+            <div class="bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
+                <p class="text-[10px] font-bold text-zinc-500 uppercase">Registry Sync</p>
+                <p class="text-xl font-black text-indigo-500 italic">LIVE</p>
+            </div>
+        </div>
+
+        <div class="bg-zinc-900/30 rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl">
+            <table class="w-full text-left">
+                <thead class="bg-zinc-900 text-[10px] font-black uppercase text-zinc-500 tracking-widest border-b border-zinc-800">
+                    <tr>
+                        <th class="p-5 italic">Command Source</th>
+                        <th class="p-5">SKU ID</th>
+                        <th class="p-5">Product Name</th>
+                        <th class="p-5 text-right">MSRP (USD)</th>
+                    </tr>
+                </thead>
+                <tbody class="text-xs">
+                    <tr class="ledger-row">
+                        <td class="p-5"><span class="cmd-label bg-indigo-900/40 text-indigo-400">SOLOMON KIN</span></td>
+                        <td class="p-5"><span class="sku-badge">SK-AITS-001</span></td>
+                        <td class="p-5 text-white font-semibold">KinOS Core License (Individual)</td>
+                        <td class="p-5 text-right text-indigo-400 font-bold">$29.99/mo</td>
+                    </tr>
+                    <tr class="ledger-row">
+                        <td class="p-5"><span class="cmd-label bg-indigo-900/40 text-indigo-400">SOLOMON KIN</span></td>
+                        <td class="p-5"><span class="sku-badge">SK-IP-044</span></td>
+                        <td class="p-5 text-white font-semibold">Media Rights Master Template (Music Group)</td>
+                        <td class="p-5 text-right text-indigo-400 font-bold">$149.00</td>
+                    </tr>
+
+                    <tr class="ledger-row">
+                        <td class="p-5"><span class="cmd-label bg-green-900/40 text-green-400">GLOBAL JOE</span></td>
+                        <td class="p-5"><span class="sku-badge">GCJ-ART-012</span></td>
+                        <td class="p-5 text-white font-semibold">NMMMB Method Digital Ritual Guide</td>
+                        <td class="p-5 text-right text-green-400 font-bold">$45.00</td>
+                    </tr>
+                    <tr class="ledger-row">
+                        <td class="p-5"><span class="cmd-label bg-green-900/40 text-green-400">GLOBAL JOE</span></td>
+                        <td class="p-5"><span class="sku-badge">GCJ-LOG-099</span></td>
+                        <td class="p-5 text-white font-semibold">Apex Vesto Casting/Tourism SLA</td>
+                        <td class="p-5 text-right text-green-400 font-bold">$250.00</td>
+                    </tr>
+
+                    <tr class="ledger-row">
+                        <td class="p-5"><span class="cmd-label bg-blue-900/40 text-blue-400">IBINGOD</span></td>
+                        <td class="p-5"><span class="sku-badge">IBI-IMEX-002</span></td>
+                        <td class="p-5 text-white font-semibold">Industrial Verification Manifest Kit</td>
+                        <td class="p-5 text-right text-blue-400 font-bold">$499.00</td>
+                    </tr>
+                    <tr class="ledger-row">
+                        <td class="p-5"><span class="cmd-label bg-blue-900/40 text-blue-400">IBINGOD</span></td>
+                        <td class="p-5"><span class="sku-badge">IBI-ENV-021</span></td>
+                        <td class="p-5 text-white font-semibold">Clean Blue Green Compliance Certification</td>
+                        <td class="p-5 text-right text-blue-400 font-bold">$85.00</td>
+                    </tr>
+
+                    <tr class="ledger-row">
+                        <td class="p-5"><span class="cmd-label bg-red-900/40 text-red-400">NON-PROFIT</span></td>
+                        <td class="p-5"><span class="sku-badge">NPC-ID-001</span></td>
+                        <td class="p-5 text-white font-semibold">Great Seal Identity Sovereignty ID</td>
+                        <td class="p-5 text-right text-red-400 font-bold">$75.00</td>
+                    </tr>
+                    <tr class="ledger-row">
+                        <td class="p-5"><span class="cmd-label bg-red-900/40 text-red-400">NON-PROFIT</span></td>
+                        <td class="p-5"><span class="sku-badge">NPC-AEAH-005</span></td>
+                        <td class="p-5 text-white font-semibold">Anti-Harassment Legal Repository Access</td>
+                        <td class="p-5 text-right text-red-400 font-bold">$125.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-8 text-center">
+            <p class="text-[10px] text-zinc-700 font-mono italic">** All products listed are delivered via Vexilla Autonomous Fulfillment (Certification.html) **</p>
+        </div>
+    </div>
+
+</body>
+</html>
