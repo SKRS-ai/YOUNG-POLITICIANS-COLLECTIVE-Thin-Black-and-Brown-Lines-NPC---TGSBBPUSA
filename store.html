@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Repository | Vexilla Digital Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #08080a; color: #d1d5db; font-family: 'Inter', sans-serif; }
+        .product-card { background: #111114; border: 1px solid #1f1f23; transition: 0.3s; position: relative; overflow: hidden; }
+        .product-card:hover { border-color: #6366f1; transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.3); }
+        .category-pill { background: #1f1f23; color: #94a3b8; font-size: 0.65rem; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; }
+        .price-tag { color: #818cf8; font-family: 'Mono', monospace; font-weight: 700; }
+        .sidebar { background: #0a0a0c; border-right: 1px solid #1f1f23; }
+        .checkout-bar { background: #6366f1; color: white; }
+    </style>
+</head>
+<body class="flex">
+
+    <aside class="w-64 h-screen sticky top-0 hidden lg:block p-6 sidebar">
+        <div class="mb-10">
+            <h1 class="text-white font-black text-xl tracking-tighter">VEXILLA <span class="text-indigo-500">STORE</span></h1>
+            <p class="text-[10px] text-gray-500 tracking-[0.2em] uppercase mt-1">Digital Repository</p>
+        </div>
+        
+        <nav class="space-y-8">
+            <div>
+                <h3 class="text-xs font-bold text-gray-500 uppercase mb-4 tracking-widest">Filters</h3>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="text-indigo-400 font-bold">All Products (100+)</a></li>
+                    <li><a href="#" class="hover:text-white">Software Licenses</a></li>
+                    <li><a href="#" class="hover:text-white">Legal Templates</a></li>
+                    <li><a href="#" class="hover:text-white">NPC Certifications</a></li>
+                    <li><a href="#" class="hover:text-white">Media Assets</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold text-gray-500 uppercase mb-4 tracking-widest">Account</h3>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-white italic"><i class="fa-solid fa-user-shield mr-2"></i>My Vault</a></li>
+                    <li><a href="#" class="hover:text-white italic"><i class="fa-solid fa-history mr-2"></i>Order History</a></li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="flex-1 p-8">
+        
+        <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-4">
+            <div class="relative w-full max-w-xl">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-600"></i>
+                <input type="text" placeholder="Search the repository (e.g. 'KinOS', 'Verification', 'SLA')" class="w-full bg-[#111114] border border-gray-800 rounded-full py-3 pl-12 pr-4 outline-none focus:border-indigo-500 transition">
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-xs font-mono text-gray-500">SYSTEM STATUS: <span class="text-green-500">AUTONOMOUS</span></span>
+                <button class="bg-indigo-600 px-6 py-2 rounded-full text-sm font-bold text-white hover:bg-indigo-500 transition">CART (0)</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+            <div class="product-card p-6 rounded-2xl">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="category-pill">Software License</span>
+                    <i class="fa-solid fa-microchip text-indigo-500"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-1">KinOS Tier-1 Access Token</h3>
+                <p class="text-xs text-gray-500 mb-6 leading-relaxed">Monthly recurring autonomous license for the KinOS Cloud Environment. Includes 50GB encrypted storage.</p>
+                <div class="flex justify-between items-center mt-auto">
+                    <span class="price-tag">$29.00/mo</span>
+                    <button class="text-xs bg-white text-black px-4 py-2 rounded font-bold uppercase hover:bg-indigo-500 hover:text-white transition">Add to Vault</button>
+                </div>
+            </div>
+
+            <div class="product-card p-6 rounded-2xl">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="category-pill">Verification</span>
+                    <i class="fa-solid fa-id-card text-pink-500"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-1">Great Seal ID Certification</h3>
+                <p class="text-xs text-gray-500 mb-6 leading-relaxed">Official digital verification of status within the TBBLUSA network. Automated PDF generation upon checkout.</p>
+                <div class="flex justify-between items-center">
+                    <span class="price-tag">$75.00</span>
+                    <button class="text-xs bg-white text-black px-4 py-2 rounded font-bold uppercase hover:bg-indigo-500 hover:text-white transition">Add to Vault</button>
+                </div>
+            </div>
+
+            <div class="product-card p-6 rounded-2xl">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="category-pill">Legal / NPC</span>
+                    <i class="fa-solid fa-scale-balanced text-yellow-500"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-1">AEAH Anti-Harassment Policy Kit</h3>
+                <p class="text-xs text-gray-500 mb-6 leading-relaxed">Corporate policy templates for Against Electronic Abuse & Harassment compliance. Essential for businesses.</p>
+                <div class="flex justify-between items-center">
+                    <span class="price-tag">$150.00</span>
+                    <button class="text-xs bg-white text-black px-4 py-2 rounded font-bold uppercase hover:bg-indigo-500 hover:text-white transition">Add to Vault</button>
+                </div>
+            </div>
+
+            <div class="product-card p-6 rounded-2xl">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="category-pill">Trade</span>
+                    <i class="fa-solid fa-ship text-blue-500"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-1">Import/Export Compliance Pack</h3>
+                <p class="text-xs text-gray-500 mb-6 leading-relaxed">A complete set of digital records and verification templates for international IBINGOD trade operations.</p>
+                <div class="flex justify-between items-center">
+                    <span class="price-tag">$299.00</span>
+                    <button class="text-xs bg-white text-black px-4 py-2 rounded font-bold uppercase hover:bg-indigo-500 hover:text-white transition">Add to Vault</button>
+                </div>
+            </div>
+
+            <div class="product-card p-6 rounded-2xl">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="category-pill">Media</span>
+                    <i class="fa-solid fa-music text-purple-500"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-1">Solomon Kin Artist Starter Kit</h3>
+                <p class="text-xs text-gray-500 mb-6 leading-relaxed">Standard licensing agreements and distribution checklists for new artists joining the SK Music Group.</p>
+                <div class="flex justify-between items-center">
+                    <span class="price-tag">$45.00</span>
+                    <button class="text-xs bg-white text-black px-4 py-2 rounded font-bold uppercase hover:bg-indigo-500 hover:text-white transition">Add to Vault</button>
+                </div>
+            </div>
+
+            <div class="product-card p-6 rounded-2xl">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="category-pill">Environmental</span>
+                    <i class="fa-solid fa-wind text-teal-500"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-1">Windmill System Technical Spec</h3>
+                <p class="text-xs text-gray-500 mb-6 leading-relaxed">Official technical documentation and verification rights for GCJ Windmill System implementation.</p>
+                <div class="flex justify-between items-center">
+                    <span class="price-tag">$500.00</span>
+                    <button class="text-xs bg-white text-black px-4 py-2 rounded font-bold uppercase hover:bg-indigo-500 hover:text-white transition">Add to Vault</button>
+                </div>
+            </div>
+
+            </div>
+
+        <div class="mt-16 text-center">
+            <button class="border border-gray-800 px-8 py-3 rounded text-sm text-gray-400 hover:text-white hover:border-gray-500 transition">LOAD NEXT 20 PRODUCTS</button>
+        </div>
+
+    </main>
+
+</body>
+</html>
