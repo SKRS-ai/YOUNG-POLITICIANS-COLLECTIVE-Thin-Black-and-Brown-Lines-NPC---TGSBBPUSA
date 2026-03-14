@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Command | Vexilla Enterprise Help Desk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #050505; color: #a1a1aa; font-family: 'Inter', sans-serif; }
+        .kb-card { background: #0f0f12; border: 1px solid #1f1f23; transition: 0.3s; }
+        .kb-card:hover { border-color: #6366f1; background: #141418; }
+        .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: #22c55e; box-shadow: 0 0 8px #22c55e; }
+    </style>
+</head>
+<body>
+
+    <nav class="border-b border-zinc-800 bg-black/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-headset text-indigo-500"></i>
+                <span class="text-white font-bold tracking-tighter uppercase text-sm">Vexilla <span class="text-indigo-400">Support</span></span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-[10px] font-mono text-zinc-500 uppercase">System: <span class="text-green-500 italic">Operational</span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-20 bg-gradient-to-b from-indigo-950/10 to-transparent border-b border-zinc-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-4xl font-black text-white mb-6 uppercase tracking-tighter italic">How can we assist your Command?</h1>
+            <div class="relative max-w-2xl mx-auto">
+                <input type="text" placeholder="Search for documentation, troubleshooting, or associations..." class="w-full bg-zinc-900 border border-zinc-800 rounded-xl py-4 pl-12 pr-4 outline-none focus:border-indigo-500">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-zinc-600"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="kb-card p-8 rounded-2xl">
+                <i class="fa-solid fa-id-card-clip text-indigo-500 text-2xl mb-4"></i>
+                <h3 class="text-white font-bold mb-2">Identity & Records</h3>
+                <p class="text-xs leading-relaxed mb-6">Troubleshooting the Great Seal ID, TBBLUSA certification, and digital sovereignty documentation.</p>
+                <a href="#" class="text-indigo-400 text-[10px] font-black uppercase hover:underline">12 Articles &rarr;</a>
+            </div>
+
+            <div class="kb-card p-8 rounded-2xl">
+                <i class="fa-solid fa-code text-indigo-500 text-2xl mb-4"></i>
+                <h3 class="text-white font-bold mb-2">Technical Support</h3>
+                <p class="text-xs leading-relaxed mb-6">Software installation for KinOS, API integration for Vexilla AITS, and ScribeBoard setup.</p>
+                <a href="#" class="text-indigo-400 text-[10px] font-black uppercase hover:underline">24 Articles &rarr;</a>
+            </div>
+
+            <div class="kb-card p-8 rounded-2xl">
+                <i class="fa-solid fa-box-open text-indigo-500 text-2xl mb-4"></i>
+                <h3 class="text-white font-bold mb-2">The Repository (Orders)</h3>
+                <p class="text-xs leading-relaxed mb-6">Billing inquiries, digital product fulfillment, and subscription management for all commands.</p>
+                <a href="#" class="text-indigo-400 text-[10px] font-black uppercase hover:underline">18 Articles &rarr;</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-zinc-900/30 py-20">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="bg-zinc-900 p-10 rounded-3xl border border-zinc-800 shadow-2xl">
+                <h2 class="text-2xl font-black text-white mb-2 uppercase italic">Initialize Support Ticket</h2>
+                <p class="text-sm text-zinc-500 mb-8">If you cannot find your answer in the knowledge base, submit a ticket to the autonomous queue.</p>
+                
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="Full Name" class="bg-black/50 border border-zinc-800 p-4 rounded-lg text-sm outline-none focus:border-indigo-500">
+                        <input type="email" placeholder="Email Address" class="bg-black/50 border border-zinc-800 p-4 rounded-lg text-sm outline-none focus:border-indigo-500">
+                    </div>
+                    <select class="w-full bg-black/50 border border-zinc-800 p-4 rounded-lg text-sm outline-none focus:border-indigo-500">
+                        <option>Select Related Command</option>
+                        <option>Solomon Kin (Media/AI)</option>
+                        <option>Global Citizen Joe (Consumer)</option>
+                        <option>IBINGOD (Trade/Environmental)</option>
+                        <option>Foundations (NPC/Grants)</option>
+                    </select>
+                    <textarea rows="4" placeholder="Describe the issue or inquiry..." class="w-full bg-black/50 border border-zinc-800 p-4 rounded-lg text-sm outline-none focus:border-indigo-500"></textarea>
+                    <button class="w-full bg-indigo-600 text-white font-black py-4 rounded-lg hover:bg-indigo-500 transition uppercase tracking-widest">Submit to Queue</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-zinc-900 bg-black">
+        <p class="text-[10px] text-zinc-700 font-bold uppercase tracking-widest">Vexilla Support Network // Autonomous Help Desk</p>
+    </footer>
+
+</body>
+</html>
